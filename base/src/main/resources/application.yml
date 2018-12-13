@@ -1,0 +1,21 @@
+
+#spring的配置信息
+spring:
+  application:
+    name: base #服务名称
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///tensquare_base
+    username: root
+    password: root
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+  profiles:
+    include: common
+
+  mvc:
+    static-path-pattern: /static/**
+
+
